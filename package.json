@@ -1,6 +1,13 @@
 {
+  "name": "@hitchcott/furi",
+  "version": "0.0.1",
   "dependencies": {
+    "japaneasy": "^0.2.2",
     "kuroshiro": "^1.1.2",
-    "kuroshiro-analyzer-kuromoji": "^1.1.0"
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
+    "unofficial-jisho-api": "^2.0.8"
+  },
+  "bin": {
+    "furi": "./index.js"
   }
 }
