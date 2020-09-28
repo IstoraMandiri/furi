@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const translate = require('@k3rn31p4nic/google-translate-api');
 const Kuroshiro = require("kuroshiro");
 const KuromojiAnalyzer = require("kuroshiro-analyzer-kuromoji");
 var Dictionary = require("japaneasy");
@@ -30,7 +31,10 @@ const log = (text) => {
   }
   const kuroshiro = new Kuroshiro();
   await kuroshiro.init(new KuromojiAnalyzer());
-  const converted = await kuroshiro.convert(text, charOpts);
+  const [converted, { text: english }] = await Promise.all([
+    kuroshiro.convert(text, charOpts),
+    translate(text, { from: 'ja', to: 'en' })
+  ]);
   // spacing fixing up for anki
   const formatted = converted
     .split("")
@@ -52,9 +56,9 @@ const log = (text) => {
   const formattedDefinitions = definitions
     .map(
       (d) =>
-        `${d.japanese}${(d.pronunciation && `[${d.pronunciation}]`) || ""} ${d.english.join(" ")}`
+        `~ ${d.japanese}${(d.pronunciation && `[${d.pronunciation}]`) || ""} ${d.english.join(" ")}`
     )
     .join("\n");
   // print it
-  return log(`---\n\n${formatted}\n\n${formattedDefinitions}\n\n---`);
+  return log(`---\n\n${formatted}\n\n${english}\n\n${formattedDefinitions}\n\n---`);
 })();
