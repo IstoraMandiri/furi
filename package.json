@@ -1,14 +1,13 @@
 {
   "name": "@hitchcott/furi",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "dependencies": {
     "@k3rn31p4nic/google-translate-api": "^1.1.1",
     "japaneasy": "^0.2.2",
     "kuroshiro": "^1.1.2",
-    "kuroshiro-analyzer-kuromoji": "^1.1.0",
-    "unofficial-jisho-api": "^2.0.8"
+    "kuroshiro-analyzer-kuromoji": "^1.1.0"
   },
   "bin": {
-    "furi": "./index.js"
+    "furi": "./cli.js"
   }
 }
