@@ -2,10 +2,12 @@
 
 ### CLI tool to add anki-style furigana to Japanese text
 
+To Install `furi` globally, clone this Repo and run `npm i -g .`
+
 Example:
 
 ```bash
-$ node cli.js "私も話に入ってもいいですか？"
+$ furi "私も話に入ってもいいですか？"
 私も話に入ってもいいですか？
 ---
 
