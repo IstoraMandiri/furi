@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@k3rn31p4nic/google-translate-api@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@k3rn31p4nic/google-translate-api/-/google-translate-api-1.1.1.tgz#3869854f7540bbb82afc1b61890281f5513e1717"
-  integrity sha512-vg3zLYXhUmdwrNxmoKOfYSJzB8lHKDnqR7L/SYQQKCYkxsj2syK/cJMAcK5fQC0hfwgexxUaWhR2p2gGEe3nVw==
+"@iamtraction/google-translate@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@iamtraction/google-translate/-/google-translate-1.1.2.tgz#59ed4f57fd0068f0c2486a04d1a55d241a30194f"
+  integrity sha512-z30o1rz2b7JTTqmy/MSQjwfz59++qrBpTXGHWQrqxPW1mTW5pLEMM2FymxCyJcg6alogKgSLT2RVrjuvuNCxVA==
   dependencies:
-    got "^11.1.1"
+    got "^11.8.1"
 
 "@sindresorhus/is@^4.0.0":
   version "4.0.0"
@@ -75,17 +75,17 @@ cacheable-lookup@^5.0.3:
   resolved "https://registry.yarnpkg.com/cacheable-lookup/-/cacheable-lookup-5.0.4.tgz#5a6b865b2c44357be3d5ebc2a467b032719a7005"
   integrity sha512-2/kNscPhpcxrOigMZzbiWF7dz8ilhb/nIHU3EyZiXWXpeq/au8qJ8VhdftMkty3n7Gj6HIGalQG8oiBNB3AJgA==
 
-cacheable-request@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-7.0.1.tgz#062031c2856232782ed694a257fa35da93942a58"
-  integrity sha512-lt0mJ6YAnsrBErpTMWeu5kl/tg9xMAWjavYTN6VQXM1A/teBITuNcccXsCxF0tDQQJf9DfAaX5O4e0zp0KlfZw==
+cacheable-request@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-7.0.2.tgz#ea0d0b889364a25854757301ca12b2da77f91d27"
+  integrity sha512-pouW8/FmiPQbuGpkXQ9BAPv/Mo5xDGANgSNXzTzJ8DrKGuXOssM4wIQRjfanNRh3Yu5cfYPvcorqbhg2KIJtew==
   dependencies:
     clone-response "^1.0.2"
     get-stream "^5.1.0"
     http-cache-semantics "^4.0.0"
     keyv "^4.0.0"
     lowercase-keys "^2.0.0"
-    normalize-url "^4.1.0"
+    normalize-url "^6.0.1"
     responselike "^2.0.0"
 
 clone-response@^1.0.2:
@@ -131,17 +131,17 @@ get-stream@^5.1.0:
   dependencies:
     pump "^3.0.0"
 
-got@^11.1.1:
-  version "11.8.1"
-  resolved "https://registry.yarnpkg.com/got/-/got-11.8.1.tgz#df04adfaf2e782babb3daabc79139feec2f7e85d"
-  integrity sha512-9aYdZL+6nHmvJwHALLwKSUZ0hMwGaJGYv3hoPLPgnT8BoBXm1SjnZeky+91tfwJaDzun2s4RsBRy48IEYv2q2Q==
+got@^11.8.1:
+  version "11.8.3"
+  resolved "https://registry.yarnpkg.com/got/-/got-11.8.3.tgz#f496c8fdda5d729a90b4905d2b07dbd148170770"
+  integrity sha512-7gtQ5KiPh1RtGS9/Jbv1ofDpBFuq42gyfEib+ejaRBJuj/3tQFeR5+gw57e4ipaU8c/rCjvX6fkQz2lyDlGAOg==
   dependencies:
     "@sindresorhus/is" "^4.0.0"
     "@szmarczak/http-timer" "^4.0.5"
     "@types/cacheable-request" "^6.0.1"
     "@types/responselike" "^1.0.0"
     cacheable-lookup "^5.0.3"
-    cacheable-request "^7.0.1"
+    cacheable-request "^7.0.2"
     decompress-response "^6.0.0"
     http2-wrapper "^1.0.0-beta.5.2"
     lowercase-keys "^2.0.0"
@@ -204,9 +204,9 @@ kuroshiro@^1.1.2:
     babel-runtime "^6.26.0"
 
 lodash@^4.17.14:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 lowercase-keys@^2.0.0:
   version "2.0.0"
@@ -223,10 +223,10 @@ mimic-response@^3.1.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-3.1.0.tgz#2d1d59af9c1b129815accc2c46a022a5ce1fa3c9"
   integrity sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==
 
-normalize-url@^4.1.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
-  integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
+normalize-url@^6.0.1:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
+  integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
 once@^1.3.1, once@^1.4.0:
   version "1.4.0"
