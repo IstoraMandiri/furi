@@ -1,6 +1,6 @@
 # Furi
 
-### CLI tool to add anki-style furigana to Japanese text
+### CLI tool to add anki-style furigana to Japanese text, and get word definitions in english
 
 To Install `furi` globally, clone this Repo and run `npm i -g .`
 
