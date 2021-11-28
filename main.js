@@ -19,7 +19,7 @@ async function main ({ text: _text, skipTranslate }) {
   const kuroshiro = new Kuroshiro();
   await kuroshiro.init(new KuromojiAnalyzer());
   const converted = await kuroshiro.convert(text, charOpts);
-  const english = !skipTranslate && (await require('@k3rn31p4nic/google-translate-api')(text, { from: 'ja', to: 'en' })).text;
+  const english = !skipTranslate && (await require('@iamtraction/google-translate')(text, { from: 'ja', to: 'en' })).text;
 
   // spacing fixing up for anki
   const formatted = converted
